@@ -3,7 +3,7 @@ This is a web application that helps users learn and practice English phonetic s
 
 The app defines an array of objects that contain information about the phonetics sounds. Each object has properties such as the letter, the sound file, and an example word. When the user clicks on a sound card, the app plays the corresponding sound using the SpeechSynthesis API. When the user clicks on the example word, the app speaks the word out loud using the same API.
 
-![Preview](app.jpg "Screenshot of the app")
+![Preview](app.png "Screenshot of the app")
 
 ## Requirements
 To run this app, you need to have a web browser that supports the SpeechSynthesis API. This API is available in most modern browsers, including Google Chrome, Mozilla Firefox, and Microsoft Edge.
