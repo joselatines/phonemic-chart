@@ -1,14 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <button id="play-button">Play Audio</button>
-  <div id="button-list"></div>
-  <script src="main.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Link to the compiled CSS file -->
+		<link rel="stylesheet" href="/src/styles.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+	<!-- Primary Meta Tags -->
+	<title>Phonetic Chart with Sounds</title>
+	<meta name="title" content="Phonetic Chart with Sounds">
+	<meta name="description" content="Explore the sounds of English with this interactive phonetic chart, featuring monophthongs, diphthongs, and consonant sounds. Designed by José Latines, this user-friendly tool allows you to hear and visualize the different sounds of the English language. Check out the chart and improve your pronunciation today!">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://metatags.io/">
+	<meta property="og:title" content="Phonetic Chart with Sounds">
+	<meta property="og:description" content="Explore the sounds of English with this interactive phonetic chart, featuring monophthongs, diphthongs, and consonant sounds. Designed by José Latines, this user-friendly tool allows you to hear and visualize the different sounds of the English language. Check out the chart and improve your pronunciation today!">
+	<meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://metatags.io/">
+	<meta property="twitter:title" content="Phonetic Chart with Sounds">
+	<meta property="twitter:description" content="Explore the sounds of English with this interactive phonetic chart, featuring monophthongs, diphthongs, and consonant sounds. Designed by José Latines, this user-friendly tool allows you to hear and visualize the different sounds of the English language. Check out the chart and improve your pronunciation today!">
+	<meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+	</head>
+	<body class="bg-gray-100 font-sans leading-normal tracking-normal p-4">
+		<!-- Add a container div to center the content -->
+		<div class="container mx-auto px-4 flex items-center flex-col">
+			<h1 class="font-bold text-4xl text-center mb-5">Phonetic Chart with sounds</h1>
+			<div id="chart-container" class="p-10">
+				<div
+					class="grid grid-cols-2 md:grid-cols-4 grid-rows-3 gap-x-2 gap-y-6 relative"
+					id="chart-left"
+				>
+					<span class="absolute title text-cyan-400">Monophthong</span>
+					<span class="absolute title-2 text-blue-400">Vowel sound</span>
+				</div>
+				<div
+					class="grid grid-cols-2 md:grid-cols-4 md:grid-rows-3 gap-x-2 gap-y-5 relative"
+					id="chart-right"
+				>
+					<span class="absolute title text-orange-400">Diphthongs</span>
+				</div>
+				<div
+					class="grid grid-cols-3 md:grid-cols-8 md:grid-rows-3 gap-x-2 gap-y-6 relative mt-8 "
+					id="chart-bottom"
+				>
+					<span class="absolute title-2 text-red-400">Consonant sound</span>
+				</div>
+			</div>
+
+			<div class="summary">
+				<ul>
+					<span class="font-bold">Notes: </span>
+					<li>
+						Words with "🔇" are unvoiced consonant sounds, which means that the
+						sound is made by air moving from the back of your mouth through and
+						out your lips
+					</li>
+				</ul>
+			</div>
+			<span>Made with 💓 by <a href="https://joselatines.vercel.app" class="font-medium" target="_blank" rel="noopener noreferrer">José Latines</a></span>
+		</div>
+		<!-- Link to the compiled JavaScript file -->
+		<script type="module" src="/src/main.js"></script>
+	</body>
 </html>
